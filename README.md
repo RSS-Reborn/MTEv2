@@ -59,3 +59,9 @@ This MTEv2 pack contains all of central Italy, explore the italian coastline, th
 
 This MTEv2 pack contains the majority of southern Nevada, there are multiple Airforce bases in the area including the famous Groom Lake (Area 51) and other interesting landmarks like nuclear tests craters and Los Angeles.
 ![SouthernNevada](https://github.com/user-attachments/assets/39f78628-99c1-4b85-8dc0-aa683daae062)
+
+Created by: 杠
+
+**Mountain Everest&Surrounding Area** - https://github.com/zhouyiqing0304/MountainEverestWithSurroundingAreas/releases
+
+This MTEv2 pack contains mountain everest and surrounding area, which is the highest place in the world.
