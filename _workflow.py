@@ -103,6 +103,11 @@ class workflows:
             Long = int(self.coords[4:7])
             if self.coords[3] == 'w':
                 Long = -1*Long
+            order = ""
+            if self.modTag == "RealSolarSystem":
+                order = "9999996"
+            else:
+                order = "21"
             
             output = []
             output.append(f"@Kopernicus:AFTER[{self.modTag}]\n")
@@ -123,7 +128,7 @@ class workflows:
             output.append(f"\t\t\t\t\tminLong = {Long}\n")
             output.append(f"\t\t\t\t\tmaxLat = {Lat}\n")
             output.append(f"\t\t\t\t\tminLat = {Lat-1}\n")
-            output.append(f"\t\t\t\t\torder = 21\n")
+            output.append(f"\t\t\t\t\torder = {order}\n")
             output.append("\t\t\t\t}\n")
             output.append("\t\t\t}\n")
             output.append("\t\t}\n")
@@ -226,6 +231,12 @@ class workflows:
             sub.run(["nvtt_export", f"{fileName}_color-Sized.tif", "-o", f"{fileName}_Color.dds", "-f 15", "--no-mips"])
             
         def GenerateConfig(self):            
+            order = ""
+            if self.modTag == "RealSolarSystem":
+                order = "9999996"
+            else:
+                order = "21"
+            
             output = []
             output.append(f"@Kopernicus:AFTER[{self.modTag}]\n")
             output.append("{\n")
@@ -245,7 +256,7 @@ class workflows:
             output.append(f"\t\t\t\t\tminLong = {self.leftCoord}\n")
             output.append(f"\t\t\t\t\tmaxLat = {self.topCoord}\n")
             output.append(f"\t\t\t\t\tminLat = {self.bottomCoord}\n")
-            output.append(f"\t\t\t\t\torder = 21\n")
+            output.append(f"\t\t\t\t\torder = {order}\n")
             output.append("\t\t\t\t}\n")
             output.append("\t\t\t}\n")
             output.append("\t\t}\n")

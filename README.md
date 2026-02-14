@@ -1,13 +1,14 @@
 This repository holds all information related to MTEv2, check out the wiki on information on creating your own tiles!
 
-MTEv2 requires https://github.com/CharonSSS/AdvancedPQSTools to function properly
-
-Also navigate to Gamedata/Sol-Configs/03_Earth-System/03_Earth/Earth-Kopernicus.cfg, scroll down to the PQS category and set:  
-maxLevel = 16, minDetailDistance = 16.
-
-Its also recommended to disable the scatters by deleting Earth-ParallaxScatters.cfg in the same folder.
-
-
+Requirements:
+* https://github.com/CharonSSS/AdvancedPQSTools
+* https://github.com/Kopernicus/Kopernicus
+* https://github.com/KSP-RO/KSCSwitcher
+* https://github.com/KSP-RO/Kerbal-Konstructs
+* https://github.com/sarbian/ModuleManager
+* One of the following planet packs:
+  * [Sol](https://docs.google.com/document/d/1GyQlvDE8JD81fL8GPenKOA3Do4GqlDSx0tWsKy_p208/edit?tab=t.0)
+  * https://github.com/KSP-RO/RealSolarSystem
 
 ## Official MTE v2 Packs
 
